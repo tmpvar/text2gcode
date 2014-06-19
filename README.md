@@ -35,6 +35,10 @@ text2gcode --font=GUBBLO___.ttf "npm" --fs=100 --diameter=6.35 --pass=1
 Which means, cut out the text "npm" (where each uppercase letter is 100mm) using a tool that is 6.35mm in diameter.
 `--pass` ensures that there will be 5 passes total (1mm per pass!)
 
+The result looks something like this:
+
+![npmjs logo in pine](http://i.imgur.com/xPdmg3R.png)
+
 
 ## Shouts
 
