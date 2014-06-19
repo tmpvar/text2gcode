@@ -2,7 +2,7 @@
 
 var opentype = require('opentype.js');
 var argv = require('yargs')
-  .usage('$0 --font=/path/to/text.ttf --diameter --depth=-5 "hello world"')
+  .usage('$0 --font=/path/to/text.ttf --diameter=2.5 --depth=-5 "hello world"')
   .demand('font')
   .describe('font', '/path/to/font.ttf')
   .demand('depth')
@@ -62,6 +62,8 @@ opentype.load(argv.font, function(err, font) {
   var path = font.getPath(text, 0, 0, fontsize, null);
 
   argv.rotate && ctx.rotate(TAU * parseFloat(argv.rotate))
+
+  // Stroke and fill are buggy, use at your own risk!
 
   if (argv.stroke) {
     path.lineWidth = parseInt(argv.stroke);
