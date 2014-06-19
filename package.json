@@ -1,0 +1,33 @@
+{
+  "name": "text2gcode",
+  "version": "0.1.0",
+  "description": "turn text + ttf into gcode",
+  "main": "text2gcode.js",
+  "dependencies": {
+    "gcanvas": "^0.0.24",
+    "opentype.js": "^0.3.0",
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmpvar/text2gcode.git"
+  },
+  "keywords": [
+    "gcode",
+    "text",
+    "toolpath",
+    "ttf",
+    "otf",
+    "truetype"
+  ],
+  "author": "Elijah Insua <tmpvar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmpvar/text2gcode/issues"
+  },
+  "homepage": "https://github.com/tmpvar/text2gcode"
+}
