@@ -1,6 +1,6 @@
 # text2gcode
 
-This is an executable library that turns text + (ttf|otf) fonts into gcode
+This is an executable module that turns text + (ttf|otf) fonts into gcode
 
 ## install
 
