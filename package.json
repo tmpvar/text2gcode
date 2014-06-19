@@ -6,9 +6,12 @@
   "dependencies": {
     "gcanvas": "^0.0.24",
     "opentype.js": "^0.3.0",
-    "optimist": "^0.6.1"
+    "yargs": "^1.2.5"
   },
   "devDependencies": {},
+  "bin": {
+    "text2gcode": "text2gcode.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
