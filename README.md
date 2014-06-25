@@ -9,18 +9,18 @@ This is an executable module that turns text + (ttf|otf) fonts into gcode
 ## usage
 
 ```
-text2gcode --font=/path/to/text.ttf --diameter=2.5 --depth=-5 "hello world"
+node ./text2gcode.js --font=/path/to/text.ttf --diameter=2.5 --depth=-5 "hello world"
 
 Options:
-  --font      /path/to/font.ttf                                              [required]
-  --depth     total depth to go (may be negative if your machine is normal)  [required]
-  --diameter  cutting tool diameter                                          [required]
-  --fs        size of the font in world units (mm/in)                        [default: 20]
-  --pass      total depth taken off per layer (depth per pass)               [default: 0.1]
-  --rotate    rotate by % TAU (i.e. --rotate=.25 means 90 degrees)           [default: 0]
-  --mirror    mirror on the x axis                                           [default: false]
-  -x          translate on the x                                             [default: 0]
-  -y          translate on the y                                             [default: 0]
+  --font      /path/to/font.ttf                                     [required]
+  --depth     total depth to go (may be negative)                   [required]
+  --diameter  cutting tool diameter                                 [required]
+  --fs        size of the font in world units (mm/in)               [default: 20]
+  --pass      total depth taken off per layer (depth per pass)      [default: 0.1]
+  --rotate    rotate by % TAU (i.e. --rotate=.25 means 90 degrees)  [default: 0]
+  --mirror    mirror on the x axis                                  [default: false]
+  -x          translate on the x                                    [default: 0]
+  -y          translate on the y                                    [default: 0]
 
 ```
 
